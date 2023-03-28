@@ -12,7 +12,9 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello() {
-        logger.debug("Hello");
+        logger.info("Hello!");
+        logger.debug("INFO!");
+        logger.error("ERROR!");
         return "Hello, world!";
     }
 }
